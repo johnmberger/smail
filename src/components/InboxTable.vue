@@ -15,13 +15,14 @@
         >
           <td
             class="
-              px-3
+              px-1
+              md:px-3
               py-6
+              flex-1
               whitespace-nowrap
               flex flex-column
               justify-center
               items-center
-              h-full
             "
           >
             <input
@@ -49,24 +50,42 @@
               />
             </button>
           </td>
-          <td class="px-6 py-4">
+          <td class="px-1 md:px-6 py-4">
             <div class="flex items-center">
               <div class="ml-4">
-                <div class="text-sm font-medium text-gray-900">
+                <div class="text-xs md:text-sm font-medium text-gray-900">
                   {{ message.sender }}
                 </div>
               </div>
             </div>
           </td>
-          <td class="px-6 py-4">
-            <div class="text-sm text-gray-900">{{ message.subject }}</div>
+          <td class="px-2 md:px-6 py-4">
+            <div class="text-xs md:text-sm text-gray-900">
+              {{ message.subject }}
+            </div>
             <div
-              class="text-sm text-gray-500 message-body overflow-ellipsis"
+              class="
+                text-xs
+                md:text-sm
+                text-gray-500
+                message-body
+                overflow-ellipsis
+              "
               v-html="message.body"
             ></div>
           </td>
           <td
-            class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium"
+            class="
+              px-1
+              pr-3
+              md:px-6
+              md:pr-6
+              py-4
+              whitespace-nowrap
+              text-right text-xs
+              md:text-sm
+              font-medium
+            "
             :title="message.date"
           >
             <span>{{ formatDate(message.date) }}</span>
