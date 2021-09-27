@@ -1,8 +1,6 @@
 # Smail!
 
-It's email for people who like snail mail!
-
-Build exclusively for Salesloft users.
+It's email for people who like snail mail! Built exclusively for Salesloft users.
 
 This is written in Vue 3 with Typescript and Tailwind. I tried to avoid using any component library as a lil challenge to myself.
 
