@@ -25,7 +25,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: yarn install
-      - run: yarn build --base=/smail/
+      - run: yarn test && yarn build --base=/smail/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

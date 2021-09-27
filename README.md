@@ -25,6 +25,7 @@ Rock and Roll!
 ## Other Notes
 
 If I did this again and had more than a couple hours, I would've:
+
 - componentized a bunch of stuff
 - written more tests
 - not spent so much time making the vuex store and more time on functionality
