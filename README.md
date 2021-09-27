@@ -21,3 +21,11 @@ yarn dev
 ```
 
 Rock and Roll!
+
+## Other Notes
+
+If I did this again, I would've:
+- written more tests
+- componentized a bunch of stuff
+- not spent so much time making the vuex store
+- maybe used a component library... tailwind is great but chatty
