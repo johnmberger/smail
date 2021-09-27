@@ -1,4 +1,4 @@
-# Smail
+# Smail!
 
 It's email for people who like snail mail!
 
