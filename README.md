@@ -24,8 +24,10 @@ Rock and Roll!
 
 ## Other Notes
 
-If I did this again, I would've:
-- written more tests
+If I did this again and had more than a couple hours, I would've:
 - componentized a bunch of stuff
-- not spent so much time making the vuex store
+- written more tests
+- not spent so much time making the vuex store and more time on functionality
+- added the ability to ya know... actually read the emails.
+- added routing and a loading splash screen
 - maybe used a component library... tailwind is great but chatty
