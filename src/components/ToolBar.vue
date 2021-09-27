@@ -6,7 +6,13 @@
     class="toolbar px-3 py-2 border-2 border-gray-400 flex h-full items-center"
   >
     <input
-      @change="(e) => selectAllMessages(e.target.checked || false)"
+      @change="
+        (e) =>
+          selectAllMessages(
+            // @ts-ignore
+            e.target.checked || false,
+          )
+      "
       :checked="allSelected"
       type="checkbox"
       class="form-checkbox h-4 w-4 text-gray-600 cursor-pointer"

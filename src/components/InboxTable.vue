@@ -28,6 +28,7 @@
               @change="
                 (e) =>
                   toggleSelectedMessage({
+                    // @ts-ignore
                     isSelected: e.target.checked,
                     id: message.id,
                   })
