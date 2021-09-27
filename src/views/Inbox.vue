@@ -41,6 +41,7 @@ export default defineComponent({
 
 <style>
 .inbox-wrapper {
-  width: calc(100vw - 48px);
+  width: 100%;
+  min-width: 100vw;
 }
 </style>

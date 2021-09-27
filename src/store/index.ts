@@ -180,9 +180,9 @@ export const store = createStore<State>({
               // show everything but deleted messages
               return !message.deleted;
             } else if (selectionGroup === 'Starred') {
-              return message.starred;
+              return message.starred && !message.deleted;
             } else {
-              return message.tags.includes(selectionGroup);
+              return message.tags.includes(selectionGroup) && !message.deleted;
             }
           })
       );
