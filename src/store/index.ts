@@ -49,7 +49,7 @@ export const store = createStore<State>({
         // mocking out the api request.
         // if this was a real app, i'd obviously use a real api
         // and separate this concern to another file
-        const response = await axios.get('/assets/emails.json');
+        const response = await axios.get('assets/emails.json');
         const messages = response.data?.messages;
         const formattedMessages = formatMessages(messages);
         commit('SET_MESSAGES', formattedMessages);
