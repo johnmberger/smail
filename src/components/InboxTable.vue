@@ -50,7 +50,7 @@
               />
             </button>
           </td>
-          <td class="px-1 md:px-6 py-4">
+          <td class="px-6 py-4 hidden md:table-cell">
             <div class="flex items-center">
               <div class="ml-4">
                 <div class="text-xs md:text-sm font-medium text-gray-900">
@@ -60,7 +60,10 @@
             </div>
           </td>
           <td class="px-2 md:px-6 py-4">
-            <div class="text-xs md:text-sm text-gray-900">
+            <div class="text-sm font-medium text-gray-900 md:hidden">
+              {{ message.sender }}
+            </div>
+            <div class="text-sm text-gray-900">
               {{ message.subject }}
             </div>
             <div
