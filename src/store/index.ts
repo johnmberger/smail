@@ -77,11 +77,11 @@ export const store = createStore<State>({
 
       commit('SET_SELECTED_MESSAGE_IDS', selectedMessageIds);
     },
-    selectAllMessages({ state, commit }, { isSelected }) {
+    selectAllMessages({ state, commit, getters }, { isSelected }) {
       if (isSelected) {
         commit(
           'SET_SELECTED_MESSAGE_IDS',
-          state.messages.map((m) => m.id),
+          getters.getFilteredMessages.map((m: Message) => m.id),
         );
       } else {
         commit('SET_SELECTED_MESSAGE_IDS', []);
@@ -192,8 +192,10 @@ export const store = createStore<State>({
         return state.selectedMessageIds.includes(id);
       };
     },
-    allSelected(state) {
-      return state.selectedMessageIds.length === state.messages.length;
+    allSelected(state, getters) {
+      return (
+        state.selectedMessageIds.length === getters.getFilteredMessages.length
+      );
     },
   },
 });
