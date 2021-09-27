@@ -1,8 +1,6 @@
 # Smail!
 
-It's email for people who like snail mail!
-
-Build exclusively for Salesloft users.
+It's email for people who like snail mail! Built exclusively for Salesloft users.
 
 This is written in Vue 3 with Typescript and Tailwind. I tried to avoid using any component library as a lil challenge to myself.
 
@@ -23,3 +21,13 @@ yarn dev
 ```
 
 Rock and Roll!
+
+## Other Notes
+
+If I did this again and had more than a couple hours, I would've:
+- componentized a bunch of stuff
+- written more tests
+- not spent so much time making the vuex store and more time on functionality
+- added the ability to ya know... actually read the emails.
+- added routing and a loading splash screen
+- maybe used a component library... tailwind is great but chatty
