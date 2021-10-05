@@ -4,6 +4,7 @@ import { store, key } from './store';
 // root component
 import App from './App.vue';
 // toaster plugin
+// @ts-ignore
 import Toaster from '@meforma/vue-toaster';
 // tailwind styles
 import './styles/app.css';
