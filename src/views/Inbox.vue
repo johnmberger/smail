@@ -32,16 +32,9 @@ export default defineComponent({
 
 <template>
   <div class="mt-14 ml-14 md:ml-64">
-    <div class="shadow border-b border-gray-200 .inbox-wrapper">
+    <div class="shadow border-b border-gray-200">
       <ToolBar />
       <InboxTable />
     </div>
   </div>
 </template>
-
-<style>
-.inbox-wrapper {
-  width: 100%;
-  min-width: 100vw;
-}
-</style>

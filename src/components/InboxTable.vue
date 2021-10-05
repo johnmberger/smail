@@ -130,7 +130,7 @@
 
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent, computed, inject } from 'vue';
 import { useStore } from 'vuex';
 import { key } from '../store';
 
@@ -140,6 +140,7 @@ export default defineComponent({
   name: 'InboxTable',
   setup() {
     const store = useStore(key);
+    const toast: any = inject('toast');
 
     const formatDate = (date: string) => {
       return formatRelative(new Date(date), new Date());
@@ -167,6 +168,7 @@ export default defineComponent({
 
     const deleteMessage = ({ id }: { id: string }) => {
       store.dispatch('deleteIndividualMessage', { id });
+      toast.show('Message deleted');
     };
 
     const isSelected = (id: string) => {
@@ -203,6 +205,6 @@ export default defineComponent({
   height: calc(100vh - 190px);
 }
 .button:hover {
-  opacity: 0.66;
+  opacity: 0.6;
 }
 </style>

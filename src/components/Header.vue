@@ -51,7 +51,7 @@ export default defineComponent({
         text-blue-500 text-xs
       "
     >
-      Smail
+      <img src="/assets/smail_logo.png" alt="Smail" class="h-8 md:h-12" />
     </div>
     <div
       class="
@@ -86,7 +86,7 @@ export default defineComponent({
           v-model="searchQuery"
           type="search"
           name="search"
-          placeholder="Search Messages"
+          placeholder="Crawl Through Messages"
           class="
             w-full
             pl-3
